@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="register.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Return Book</h1>
+        </header>
+        <nav>
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <a href="bookManagement.html">Manage Books</a>
+                <a href="borrowBook.html">Borrow Book</a>
+                <a href="returnBook.html">Return Book</a>
+                <a href="searchBook.html">Search Book</a>
+        </nav>
+        <main>
+            <h2>Return a Book</h2>
+            <form action="returnBookProcess" method="POST">
+                <table>
+                    <tr>
+                        <td> <label for="studentId">Student ID:</label></td>
+                        <td><input type="text" id="studentId" name="studentId" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="bookId">Book ID:</label></td>
+                        <td><input type="text" id="bookId" name="bookId" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="LibId">Librarian ID:</label></td>
+                        <td><input type="text" id="LibId" name="LibId" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password:</label></td>
+                        <td><input type="text" id="pass" name="pass" required></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">Return Book</button></td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Library Management System</p>
+        </footer>
+    </div>
+</body>
+</html>
